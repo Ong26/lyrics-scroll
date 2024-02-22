@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: white;
+	background-color: #666;
+	text-align: center;
+	padding-top: 36px;
+}
+.container {
+	margin-top: 72px;
+	height: 400px;
+	overflow-y: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+	display: none;
+}
+ul {
+	list-style: none;
+	transition: 0.5s;
+}
+
+li {
+	height: 40px;
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+li.active {
+	opacity: 1;
+	transform: scale(1.2);
+}
